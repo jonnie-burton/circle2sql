@@ -340,7 +340,6 @@ def run():
         logging.getLogger().setLevel(logging.INFO)
         logging.info("Building pipeline ...")
 
-        pipeline.run()
 
 if __name__ == '__main__':
     run()
