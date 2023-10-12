@@ -16,4 +16,4 @@ PROJECT_ID=$(gcloud config get-value project)
 gsutil mb -l US gs://${PROJECT_ID}-circle2sql
 
 # BiqQuery Dataset
-bq mk --location=US ${PROJECT_ID}-circle2sql
+bq mk --location=US ${PROJECT_ID}:circle2sql
