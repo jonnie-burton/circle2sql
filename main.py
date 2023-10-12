@@ -40,7 +40,7 @@ def run():
     options.view_as(GoogleCloudOptions).region = opts.region
     options.view_as(GoogleCloudOptions).staging_location = opts.staging_location
     options.view_as(GoogleCloudOptions).temp_location = opts.temp_location
-    options.view_as(GoogleCloudOptions).job_name = '{0}{1}'.format('batch-user-traffic-pipeline-',time.time_ns())
+    options.view_as(GoogleCloudOptions).job_name = '{0}{1}'.format('circle2sql-',time.time_ns())
     options.view_as(StandardOptions).runner = opts.runner
 
     input_path = opts.input_path
