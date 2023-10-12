@@ -13,7 +13,7 @@ echo "Creating bucket to store input .WLD files and BQ dataset to be the output 
 PROJECT_ID=$(gcloud config get-value project)
 
 # GCS bucket
-gsutil mb -l US gs://{$PROJECT_ID}-circle2sql
+gsutil mb -l US gs://${PROJECT_ID}-circle2sql
 
 # BiqQuery Dataset
-bq mk --location=US {$PROJECT_ID}-circle2sql
+bq mk --location=US ${PROJECT_ID}-circle2sql
